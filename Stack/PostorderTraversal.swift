@@ -24,7 +24,7 @@ class PostorderTraversal {
         
         while !stack.isEmpty || node != nil {
             if node != nil {
-                res.insert(node!.val, atIndex: 0)
+                res.insert(node!.val, at: 0)
                 stack.append(node!)
                 node = node!.right
             } else {
